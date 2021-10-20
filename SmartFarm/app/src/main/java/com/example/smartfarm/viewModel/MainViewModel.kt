@@ -61,13 +61,13 @@ class MainViewModel : ViewModel() {
                 Log.e("123", "성공 : ${response}")
                 Log.e(
                     "123",
-                    "get : ${response.body()?.humidityGnd?.value}  ${response.body()?.temp?.value}  ${response.body()?.led?.status!!}"
+                    "get : ${response.body()?.humidityGnd?.value}  ${response.body()?.temp?.value}  ${response.body()?.led?.status}"
                 )
                 waterStateValue.value = response.body()?.humidityGnd?.value
                 waterStateResult.value = response.body()?.humidityGnd?.status
                 tempStateValue.value = response.body()?.temp?.value
                 tempStateResult.value = response.body()?.temp?.status
-                ledstatus.value = response.body()?.led?.status!!
+                ledstatus.value = response.body()?.led?.status
                 soilStateValue.value = response.body()?.fertilizer?.status
 
                 Log.e(
@@ -81,7 +81,7 @@ class MainViewModel : ViewModel() {
     }
 
     private fun mainViewText() {
-        if(ledstatus.value!!){
+        if(ledstatus.value == true){
             ledText.value = "ON"
         } else {
             ledText.value = "OFF"
