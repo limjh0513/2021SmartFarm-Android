@@ -1,6 +1,9 @@
 # Android
 
-### DGSW-Smart-Farm Android
+### DGSW-Smart-Farm Android v1
+
+### 토경재배 v2를 보러오세요!
+[토경재배 v2](https://github.com/limjh0513/Android_v2)
 
 
 
